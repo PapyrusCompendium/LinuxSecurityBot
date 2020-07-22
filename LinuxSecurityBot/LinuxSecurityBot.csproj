@@ -85,6 +85,7 @@
     <Compile Include="Discord\DiscordBot.cs" />
     <Compile Include="Discord\MessageFormatting.cs" />
     <Compile Include="Discord\MonitorServer.cs" />
+    <Compile Include="Discord\ServerManager.cs" />
     <Compile Include="FileSystem\MonitorFile.cs" />
     <Compile Include="LinuxSystem\Firewall.cs" />
     <Compile Include="LinuxSystem\Shell.cs" />

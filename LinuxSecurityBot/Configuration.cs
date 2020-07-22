@@ -17,14 +17,12 @@ namespace LinuxSecurityBot
 		{
 			SaslAuth,
 			PamAuth,
-			Mail,
-			Login,
 			BoundPort,
 			BlockedIP,
 			PythonProcess,
 			ShellProcess,
-			Permissions,
-			Users
+			Users,
+			ShellResponse
 		}
 
 		public struct Config
