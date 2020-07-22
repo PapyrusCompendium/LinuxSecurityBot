@@ -42,7 +42,10 @@ namespace LinuxSecurityBot
 		{
 			get
 			{
-				if (!_config.token.StartsWith("enc.") && _config.token != "")
+				if (_config.token == "")
+					return "";
+
+				if (!_config.token.StartsWith("enc."))
 				{
 					_config.token = $"enc.{AES.EncryptString(_config.token)}";
 					Save();
@@ -51,6 +54,7 @@ namespace LinuxSecurityBot
 				return AES.DecryptString(_config.token);
 			}
 		}
+
 		public static ulong OperatorID { get => _config.operatorID; set => _config.operatorID = value; }
 		public static ulong ServerID { get => _config.serverID; set => _config.serverID = value; }
 		public static ulong[] ShellUsers { get => _config.shellUsers; set => _config.shellUsers = value; }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace LinuxSecurityBot.Discord
 {
-	public static class MonitorServer
+	public class MonitorServer
 	{
-		public static void LogUpdate(Configuration.UpdateType logType, object logData)
+		public void LogUpdate(Configuration.UpdateType logType, object logData)
 		{
 
 		}

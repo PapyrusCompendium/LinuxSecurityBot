@@ -82,11 +82,13 @@
   <ItemGroup>
     <Compile Include="AES.cs" />
     <Compile Include="Configuration.cs" />
+    <Compile Include="Discord\DiscordBot.cs" />
     <Compile Include="Discord\MessageFormatting.cs" />
     <Compile Include="Discord\MonitorServer.cs" />
     <Compile Include="FileSystem\MonitorFile.cs" />
     <Compile Include="LinuxSystem\Firewall.cs" />
     <Compile Include="LinuxSystem\Shell.cs" />
+    <Compile Include="Log.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
